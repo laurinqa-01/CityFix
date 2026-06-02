@@ -1,0 +1,16 @@
+{
+  "name": "cityfix-app",
+  "version": "1.0.0",
+  "description": "Integración de API Asistida por IA y Testing E2E Real",
+  "main": "src/utils/reportEngine.js",
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

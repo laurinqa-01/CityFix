@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: cityfix_container
+    # Inyección obligatoria de DNS públicos de Google para evitar bloqueos
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    volumes:
+      - .:/app
+      - /app/node_modules # Aísla los node_modules internos del contenedor
+    environment:
+      - NODE_ENV=development
